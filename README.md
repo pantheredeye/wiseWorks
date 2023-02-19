@@ -1,121 +1,28 @@
-# README
+# WiseWorks
+WiseWorks is a two-way marketplace for practicing engineers to post jobs for retired engineers to review them. Our platform is designed to connect these two groups in a secure and efficient way, so that practicing engineers can get the feedback they need on their project plans, while retired engineers can use their expertise and experience to make a difference in their field.
 
-Welcome to [RedwoodJS](https://redwoodjs.com)!
+## How it Works
+On WiseWorks, practicing engineers can post project plans, including relevant documents and other information, and set a budget for the project review. Retired engineers can browse available projects and apply to review them, based on their expertise and experience. Once a review has been accepted, the retired engineer will have access to the project plans and any related documents, and can provide feedback and recommendations to the practicing engineer. The practicing engineer can then rate the retired engineer's performance, creating a feedback loop that ensures the quality of the reviews and helps build a strong community of retired engineers.
 
-> **Prerequisites**
->
-> - Redwood requires [Node.js](https://nodejs.org/en/) (>=14.19.x <=16.x) and [Yarn](https://yarnpkg.com/) (>=1.15)
-> - Are you on Windows? For best results, follow our [Windows development setup](https://redwoodjs.com/docs/how-to/windows-development-setup) guide
+## Key Features
+* Secure authentication system to protect user data and ensure access control.
+* Verification of professional engineering license before being able to post or review jobs, to ensure the quality of work and maintain the ethical standards required by their engineering ethics committee.
+* A two-sided marketplace that connects practicing engineers and retired engineers, allowing practicing engineers to post jobs and retired engineers to review them.
+* The ability for job posters to upload PDF files for review, and for reviewers to accept jobs and download PDFs.
+* A rating system for both job posters and reviewers to provide feedback and establish trust in the community.
 
-Start by installing dependencies:
 
-```
-yarn install
-```
+## Future Plans
+In the future, we plan to expand WiseWorks to include additional features and functionalities, including:
 
-Then change into that directory and start the development server:
+* Advanced search and filtering options, to help retired engineers find projects that match their expertise and interests.
+* Collaboration tools that allow practicing and retired engineers to work together on projects and share knowledge and resources.
+* Analytics and reporting tools, to help users track their progress and measure the impact of their work on the platform.
+* Additional payment options, including the ability to use cryptocurrencies or other alternative payment methods.
+* An integrated chat system to facilitate project and community-wide communication.
 
-```
-cd my-redwood-project
-yarn redwood dev
-```
+## Get Started
 
-Your browser should automatically open to http://localhost:8910 where you'll see the Welcome Page, which links out to a ton of great resources.
+To get started with WiseWorks, simply create an account, verify your identity, and start browsing available projects or posting your own project plans. If you have any questions or feedback, feel free to reach out to our support team at support@WiseWorks.com.
 
-> **The Redwood CLI**
->
-> Congratulations on running your first Redwood CLI command!
-> From dev to deploy, the CLI is with you the whole way.
-> And there's quite a few commands at your disposal:
-> ```
-> yarn redwood --help
-> ```
-> For all the details, see the [CLI reference](https://redwoodjs.com/docs/cli-commands).
-
-## Prisma and the database
-
-Redwood wouldn't be a full-stack framework without a database. It all starts with the schema. Open the [`schema.prisma`](api/db/schema.prisma) file in `api/db` and replace the `UserExample` model with the following `Post` model:
-
-```
-model Post {
-  id        Int      @id @default(autoincrement())
-  title     String
-  body      String
-  createdAt DateTime @default(now())
-}
-```
-
-Redwood uses [Prisma](https://www.prisma.io/), a next-gen Node.js and TypeScript ORM, to talk to the database. Prisma's schema offers a declarative way of defining your app's data models. And Prisma [Migrate](https://www.prisma.io/migrate) uses that schema to make database migrations hassle-free:
-
-```
-yarn rw prisma migrate dev
-
-# ...
-
-? Enter a name for the new migration: › create posts
-```
-
-> `rw` is short for `redwood`
-
-You'll be prompted for the name of your migration. `create posts` will do.
-
-Now let's generate everything we need to perform all the CRUD (Create, Retrieve, Update, Delete) actions on our `Post` model:
-
-```
-yarn redwood g scaffold post
-```
-
-Navigate to http://localhost:8910/posts/new, fill in the title and body, and click "Save":
-
-Did we just create a post in the database? Yup! With `yarn rw g scaffold <model>`, Redwood created all the pages, components, and services necessary to perform all CRUD actions on our posts table.
-
-## Frontend first with Storybook
-
-Don't know what your data models look like?
-That's more than ok—Redwood integrates Storybook so that you can work on design without worrying about data.
-Mockup, build, and verify your React components, even in complete isolation from the backend:
-
-```
-yarn rw storybook
-```
-
-Before you start, see if the CLI's `setup ui` command has your favorite styling library:
-
-```
-yarn rw setup ui --help
-```
-
-## Testing with Jest
-
-It'd be hard to scale from side project to startup without a few tests.
-Redwood fully integrates Jest with the front and the backends and makes it easy to keep your whole app covered by generating test files with all your components and services:
-
-```
-yarn rw test
-```
-
-To make the integration even more seamless, Redwood augments Jest with database [scenarios](https://redwoodjs.com/docs/testing.md#scenarios)  and [GraphQL mocking](https://redwoodjs.com/docs/testing.md#mocking-graphql-calls).
-
-## Ship it
-
-Redwood is designed for both serverless deploy targets like Netlify and Vercel and serverful deploy targets like Render and AWS:
-
-```
-yarn rw setup deploy --help
-```
-
-Don't go live without auth!
-Lock down your front and backends with Redwood's built-in, database-backed authentication system ([dbAuth](https://redwoodjs.com/docs/authentication#self-hosted-auth-installation-and-setup)), or integrate with nearly a dozen third party auth providers:
-
-```
-yarn rw setup auth --help
-```
-
-## Next Steps
-
-The best way to learn Redwood is by going through the comprehensive [tutorial](https://redwoodjs.com/docs/tutorial/foreword) and joining the community (via the [Discourse forum](https://community.redwoodjs.com) or the [Discord server](https://discord.gg/redwoodjs)).
-
-## Quick Links
-
-- Stay updated: read [Forum announcements](https://community.redwoodjs.com/c/announcements/5), follow us on [Twitter](https://twitter.com/redwoodjs), and subscribe to the [newsletter](https://redwoodjs.com/newsletter)
-- [Learn how to contribute](https://redwoodjs.com/docs/contributing)
+We believe that WiseWorks has the potential to revolutionize the way that practicing and retired engineers connect and work together, and we're excited to have you on board!
