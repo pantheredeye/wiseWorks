@@ -26,3 +26,32 @@ In the future, we plan to expand WiseWorks to include additional features and fu
 To get started with WiseWorks, simply create an account, verify your identity, and start browsing available projects or posting your own project plans. If you have any questions or feedback, feel free to reach out to our support team at support@WiseWorks.com.
 
 We believe that WiseWorks has the potential to revolutionize the way that practicing and retired engineers connect and work together, and we're excited to have you on board!
+
+# User Personas
+
+### User from a practicing firm who needs a project plan review
+* Name: John
+* Age: 32
+* Occupation: Mechanical engineer
+* Goals: Needs a project plan review to ensure his firm is meeting all the necessary requirements and standards.
+* Challenges: Tight deadlines and busy schedule make it difficult to find experienced and knowledgeable retired engineers to review his firm's project plans.
+* Motivations: Wants to ensure that his firm is meeting all necessary requirements and standards, and needs to find an efficient and reliable way to get project plans reviewed in a timely manner.
+* Personality traits: Detail-oriented, driven, busy, seeks efficiency.
+
+### Retired engineer who wants to review plans in their free time
+* Name: Sarah
+* Age: 65
+* Occupation: Retired civil engineer
+* Goals: Wants to use her expertise and experience to help firms meet the necessary standards and requirements for their projects, while also staying active and engaged in her field of expertise.
+* Challenges: Limited options for staying involved in her field, and limited opportunities to use her expertise and experience to help others.
+* Motivations: Wants to stay involved and engaged in her field, while also making a difference by helping firms meet the necessary requirements and standards for their projects.
+* Personality traits: Experienced, detail-oriented, passionate, looking for ways to stay engaged and active in her field.
+
+### Application administrator responsible for verifying identities of users one and two and monitoring activity on the application
+* Name: Alex
+* Age: 40
+* Occupation: Application administrator
+* Goals: Ensure the security and integrity of the platform, by verifying the identities of users one and two and monitoring their activity on the application.
+* Challenges: Ensuring that users are who they claim to be, and monitoring the platform effectively to prevent fraudulent or malicious activity.
+* Motivations: Wants to ensure the security and integrity of the platform, and create a safe and reliable marketplace for retired engineers and firms to connect.
+* Personality traits: Detail-oriented, diligent, responsible, focused on security and integrity.
