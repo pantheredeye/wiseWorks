@@ -55,3 +55,63 @@ We believe that WiseWorks has the potential to revolutionize the way that practi
 * Challenges: Ensuring that users are who they claim to be, and monitoring the platform effectively to prevent fraudulent or malicious activity.
 * Motivations: Wants to ensure the security and integrity of the platform, and create a safe and reliable marketplace for retired engineers and firms to connect.
 * Personality traits: Detail-oriented, diligent, responsible, focused on security and integrity.
+
+## Project Structure
+
+Layouts:
+1. Main Layout
+   - Contains the header and footer components that are displayed on every page
+   - Provides a consistent look and feel across the app
+   - Includes navigation links and global tools
+
+2. User Layout
+   - Wraps pages related to user registration, login, and user-specific functionality
+   - May include additional components specific to user-related actions
+
+3. Project Layout
+   - Wraps pages related to project creation, project details, and project reviews
+   - May include additional components specific to project-related actions
+
+Pages:
+1. Landing Page (Main Layout)
+   - Provides an overview of the app and its key features
+   - Includes call-to-action buttons for creating an account or logging in
+
+2. User Registration Page (User Layout)
+   - Form for creating a new user account
+   - Includes verification process for professional engineering license
+
+3. User Login Page (User Layout)
+   - Form for logging into the user account
+
+4. User Dashboard (User Layout)
+   - Overview of the user's posted projects and reviews
+   - Links to create a new project or browse available projects
+
+5. Project Creation Page (Project Layout)
+   - Form for practicing engineers to post project plans
+   - Includes upload functionality for relevant documents (PDF files)
+
+6. Project Details Page (Project Layout)
+   - Display detailed information about a specific project
+   - Allows retired engineers to apply for reviewing the project
+
+7. Reviewer Dashboard (Project Layout)
+   - Overview of available projects for retired engineers to review
+   - Links to accept or decline review requests
+
+8. Project Review Page (Project Layout)
+   - Display project plans and related documents for review
+   - Provides a feedback form for retired engineers to submit their recommendations
+
+9. Rating and Feedback Page (Project Layout)
+   - Allows practicing engineers to rate the performance of retired engineers
+   - Provides a feedback loop for continuous improvement
+
+10. Admin Dashboard (Main Layout)
+    - Monitoring and verification of user identities
+    - Activity monitoring to prevent fraudulent or malicious behavior
+
+11. Support Page (Main Layout)
+    - Contact information for reaching out to the support team
+    - FAQs or knowledge base for common questions and issues
