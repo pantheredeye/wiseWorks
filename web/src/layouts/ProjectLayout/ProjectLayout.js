@@ -1,20 +1,8 @@
-// 1. Project Plan Creation:
-//    - Form for practicing engineers to create a project plan.
-//    - Fields for entering project details such as milestones, budget, schedule, and high-level scope.
-//    - Ability to save and update the project plan.
-
-// 2. Document Upload:
-//    - Functionality to upload relevant project documents, such as PDF files or other supporting materials.
-//    - Allow users to attach and associate documents with the project plan.
 
 // 3. Project Details Display:
 //    - Display detailed information about a specific project, including project description, objectives, and goals.
 //    - Show project milestones, management plans, and project scope.
 //    - Provide a summary of the project's progress and status.
-
-// 4. Reviewer Application:
-//    - Allow retired engineers to apply for reviewing a specific project.
-//    - Provide a form for retired engineers to submit their qualifications, expertise, and experience for consideration.
 
 // 5. Project Review:
 //    - Display project plans and related documents for review by retired engineers.

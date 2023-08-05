@@ -34,21 +34,12 @@ const ProjectDetailsPage = () => {
     <>
       <MetaTags title="ProjectDetails" description="ProjectDetails page" />
 
-      <div className="project-details-container">
-      <h1>Project Title</h1>
-      <p>Project Description</p>
 
-      <div className="project-documents">
-        <h2>Project Documents</h2>
-        {/* Display relevant documents */}
-      </div>
-
-      <div className="project-info">
-        <h2>Project Information</h2>
-        <p>Budget: $1000</p>
-        <p>Expertise Required: Mechanical Engineering</p>
-        <p>Project Timeline: Start Date - End Date</p>
-      </div>
+      <div>
+      <h1>Project Details</h1>
+      <ProjectDetail id={42} />
+    </div>
+    
 
       <div className="project-actions">
         {/* Display actions for practicing engineers and retired engineers */}

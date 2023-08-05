@@ -18,6 +18,11 @@
 // - Language selection: If your app supports multiple languages, provide a language selector to allow users to switch between languages.
 // - Theme customization: Allow users to customize the app's theme, such as choosing a light or dark mode or selecting different color schemes.
 
+// * 8. Support Page:
+//    - Contact information for reaching out to the support team.
+//    - FAQs or knowledge base for common questions and issues.
+
+
 // Remember to design the header and footer in a consistent and visually appealing manner to provide a cohesive user experience throughout the app.
 
 // Please note that the specific navigation links and global tools will depend on the specific features and functionality of your app. Consider the user personas and their goals to determine the most relevant and useful elements to include in the header and footer.
@@ -30,8 +35,16 @@
 // [5] https://docs.xperience.io/k10/developing-websites/developing-websites-for-mobile-devices/creating-page-layouts-for-devices
 // [6] https://doc.arcgis.com/en/hub/sites/configure-menu-links-and-global-navigation.htm
 
+
+import Header from "src/components/Header/Header"
+import Footer
+ from "src/components/Footer/Footer"
 const MainLayout = ({ children }) => {
-  return <>{children}</>
+  return <>
+  <Header />
+  {children}
+  <Footer />
+  </>
 }
 
 export default MainLayout
