@@ -23,12 +23,15 @@
 import { MetaTags } from '@redwoodjs/web'
 
 const UserRegistrationPage = () => {
-  return (
-    <>
-      <MetaTags title="UserRegistration" description="UserRegistration page" />
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Handle form submission logic here
+  }
 
-      <h1>UserRegistrationPage</h1>
-      <div className="user-registration-container">
+  return (
+    <div>
+      <MetaTags title="User Registration" description="User Registration page" />
+
       <h1>Create a New Account</h1>
 
       <form onSubmit={handleSubmit}>
@@ -44,14 +47,15 @@ const UserRegistrationPage = () => {
         <label htmlFor="license">Professional Engineering License:</label>
         <input type="file" id="license" name="license" required />
 
-        <label htmlFor="terms">I agree to the terms and conditions:</label>
-        <input type="checkbox" id="terms" name="terms" required />
+        <label htmlFor="terms">
+          <input type="checkbox" id="terms" name="terms" required />
+          I agree to the terms and conditions
+        </label>
 
         <button type="submit">Submit</button>
       </form>
     </div>
-    </>
-  )
+  );
 }
 
-export default UserRegistrationPage
+export default UserRegistrationPage;

@@ -25,6 +25,11 @@
 import { MetaTags } from '@redwoodjs/web'
 
 const FeedbackPage = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Handle form submission logic here
+  };
+
   return (
     <>
       <MetaTags title="Feedback" description="Feedback page" />

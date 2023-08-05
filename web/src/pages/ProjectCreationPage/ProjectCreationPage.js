@@ -16,11 +16,6 @@
 
 // In terms of visual layout, it's important to keep the project creation page clean, organized, and easy to navigate. Here's a sample code snippet to help lay out the organization of the project creation page:
 
-// ```html
-// <!-- Project Creation Page -->
-
-// ```
-
 // This is just a basic structure to illustrate the layout of the project creation page. You can customize the design and styling according to your specific needs and branding guidelines. Additionally, you may want to include form validation and error handling to ensure that all required fields are filled out correctly before submitting the project.
 
 // Citations:

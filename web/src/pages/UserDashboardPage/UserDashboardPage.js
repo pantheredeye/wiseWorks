@@ -7,6 +7,7 @@
 // Support and Help: Include a section with contact information for the support team and links to FAQs or knowledge base resources. This can assist users in getting assistance or finding answers to their questions.
 
 import { MetaTags } from '@redwoodjs/web'
+import ProjectsCell from 'src/components/ProjectsCell/ProjectsCell'
 
 const UserDashboardPage = () => {
   return (
@@ -22,6 +23,7 @@ const UserDashboardPage = () => {
 
   <div class="reviewer-overview">
     <h2>Available Projects for Review</h2>
+    <ProjectsCell />
   </div>
 
   <div class="notifications">
@@ -31,6 +33,10 @@ const UserDashboardPage = () => {
   <div class="actions">
     <h2>Actions</h2>
     {/* <!-- Display buttons or links for common actions --> */}
+  </div>
+
+  <div class="payment-details">
+    <h2>Your Payment Details</h2>
   </div>
 
   <div class="ratings-feedback">

@@ -24,38 +24,51 @@
 import { MetaTags } from '@redwoodjs/web'
 
 const SupportPage = () => {
+
   return (
     <>
       <MetaTags title="Support" description="Support page" />
 
-      <h1>SupportPage</h1>
-      <div className="support-container">
-      <h1>Support</h1>
+      <header className="bg-blue-600 text-white p-4">
+        <h1 className="text-4xl font-bold">Support</h1>
+      </header>
 
-      <div className="knowledge-base">
-        <h2>Knowledge Base</h2>
-        {/* Display links to knowledge base articles */}
+      <div className="p-4">
+
+        <section className="knowledge-base">
+          <h2 className="text-2xl font-bold">Knowledge Base</h2>
+          {/* Display links to knowledge base articles */}
+        </section>
+
+        <section className="contact-information">
+          <h2 className="text-2xl font-bold">Contact Information</h2>
+          <p>Email: support@wiseworks.com</p>
+          <p>Phone: 1-800-123-4567</p>
+          <p>Chat Support: Click here to chat</p>
+        </section>
+
+        <section className="p-4">
+          <h2 className="text-2xl font-bold">Contact Us</h2>
+          <form>
+            {/* FormFields */}
+            <button className="bg-green-600 text-white font-bold py-2 px-4 rounded mt-4">Submit</button>
+          </form>
+        </section>
+
+        <section className="social-media-support">
+         {/* Links */}
+        </section>
+
+        <section className="bug-reporting">
+          {/* Link */}
+        </section>
+
       </div>
 
-      <div className="contact-information">
-        <h2>Contact Information</h2>
-        <p>Email: support@wiseworks.com</p>
-        <p>Phone: 1-800-123-4567</p>
-        <p>Chat Support: Click here to chat</p>
-      </div>
+      <footer className="bg-blue-600 text-white p-4">
+        <p>&copy; {new Date().getFullYear()} WiseWorks. All rights reserved.</p>
+      </footer>
 
-      <div className="social-media-support">
-        <h2>Social Media Support</h2>
-        <p>Facebook: Click here to get support on Facebook</p>
-        <p>Twitter: Click here to get support on Twitter</p>
-        <p>Instagram: Click here to get support on Instagram</p>
-      </div>
-
-      <div className="bug-reporting">
-        <h2>Bug Reporting</h2>
-        <p>Click here to report a bug or issue</p>
-      </div>
-    </div>
     </>
   )
 }

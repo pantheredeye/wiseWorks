@@ -1,0 +1,35 @@
+using this guidance, please update the elements on this page accordingly with updated styling:
+
+Use Tailwind CSS for styling components like buttons, sections, images, etc. Key Tailwind classes used:
+
+bg-{color}-{shade} for background colors
+text-{color} for text colors
+p-{size} for padding
+font-bold for bold text
+text-{size} for font sizes
+rounded for rounded borders
+list-{style} for list styles
+Header section
+
+Blue background (#06B6D4)
+White text
+Padding of 4
+Heading is text-4xl font-bold
+Button is bg-green-600 text-white py-2 px-4 rounded
+Section sections
+
+Padding of 4
+Headings are text-2xl font-bold
+Unordered lists use list-disc list-inside
+Testimonials section
+
+Grid with 3 columns on medium screens
+Image rounded-full
+Blockquote is italic
+Cite text for name
+Footer
+
+Blue background (#06B6D4)
+White text
+Padding of 4
+Flex nav links

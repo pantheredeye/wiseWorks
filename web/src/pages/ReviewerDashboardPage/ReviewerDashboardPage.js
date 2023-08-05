@@ -14,19 +14,6 @@
 
 // In terms of visual layout, it's important to present the reviewer dashboard in a clean and organized manner. Here's a sample React code snippet to help lay out the organization of the reviewer dashboard page:
 
-// ```jsx
-// import React from 'react';
-
-// const ReviewerDashboardPage = () => {
-//   // Fetch available projects for review from API or props
-
-//   return (
-
-//   );
-// };
-
-// export default ReviewerDashboardPage;
-// ```
 
 // This is a basic structure to illustrate the layout of the reviewer dashboard page using React. You can customize the design and styling according to your specific needs and UI framework. Additionally, you may want to handle edge cases, such as when there are no available projects for review or when there are no notifications to display.
 
@@ -37,10 +24,11 @@
 // [4] https://baymard.com/ecommerce-design-examples/58-account-dashboard
 // [5] https://news.ycombinator.com/item?id=20890682
 // [6] https://www.egbc.ca/getmedia/ea43ed87-9b15-464c-bfdc-cd9ebd5a6e7b/EGBC-Documented-Field-Reviews-V2-0.pdf.aspx
-
 import { MetaTags } from '@redwoodjs/web'
+import ProjectsCell from 'src/components/ProjectsCell/ProjectsCell'
 
 const ReviewerDashboardPage = () => {
+
   return (
     <>
       <MetaTags
@@ -48,33 +36,48 @@ const ReviewerDashboardPage = () => {
         description="ReviewerDashboard page"
       />
 
-<div className="reviewer-dashboard-container">
-      <h1>Reviewer Dashboard</h1>
+      <header className="bg-blue-600 text-white p-4">
+        <h1 className="text-4xl font-bold">Reviewer Dashboard</h1>
+      </header>
 
-      <div className="project-list">
-        <h2>Available Projects for Review</h2>
-        {/* Display project cards or list here */}
+      <div className="p-4">
+
+        <section className="project-list">
+          <h2 className="text-2xl font-bold">Available Projects for Review</h2>
+          <ProjectsCell />
+        </section>
+
+        <section className="filtering-options">
+          {/* Display filtering and sorting options */}
+        </section>
+
+        <section className="project-details">
+          {/* Display detailed information about a specific project */}
+        </section>
+
+        <section className="actions">
+          {/* Display actions for retired engineers */}
+          <button className="bg-green-600 text-white font-bold py-2 px-4 rounded">
+            Apply for Review
+          </button>
+          <button className="bg-blue-600 text-white font-bold py-2 px-4 rounded">
+           Download Project Documents
+          </button>
+          <button className="bg-gray-600 text-white font-bold py-2 px-4 rounded">
+            Contact Practicing Engineer
+          </button>
+        </section>
+
+        <section className="notifications">
+          {/* Display notifications for review requests or ongoing projects */}
+        </section>
+
       </div>
 
-      <div className="filtering-options">
-        {/* Display filtering and sorting options */}
-      </div>
+      <footer className="bg-blue-600 text-white p-4">
+        <p>&copy; {new Date().getFullYear()} WiseWorks. All rights reserved.</p>
+      </footer>
 
-      <div className="project-details">
-        {/* Display detailed information about a specific project */}
-      </div>
-
-      <div className="actions">
-        {/* Display actions for retired engineers */}
-        <button>Apply for Review</button>
-        <button>Download Project Documents</button>
-        <button>Contact Practicing Engineer</button>
-      </div>
-
-      <div className="notifications">
-        {/* Display notifications for review requests or ongoing projects */}
-      </div>
-    </div>
     </>
   )
 }

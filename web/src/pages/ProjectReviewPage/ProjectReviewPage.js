@@ -22,39 +22,43 @@
 // [4] https://www.projectengineer.net/project-planning/
 // [5] https://www.indeed.com/hire/job-description/project-engineer
 // [6] https://trellis.co/blog/project-management-tools-for-web-professionals
-
 import { MetaTags } from '@redwoodjs/web'
 
 const ProjectReviewPage = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Handle form submission logic here
+  };
+
   return (
     <>
       <MetaTags title="ProjectReview" description="ProjectReview page" />
 
       <div className="project-review-container">
-      <h1>Project Title</h1>
-      <p>Project Description</p>
+        <h1>Project Title</h1>
+        <p>Project Description</p>
 
-      <div className="project-documents">
-        <h2>Project Documents</h2>
-        {/* Display relevant documents */}
+        <div className="project-documents">
+          <h2>Project Documents</h2>
+          {/* Display relevant documents */}
+        </div>
+
+        <form onSubmit={handleSubmit}>
+          <h2>Feedback Form</h2>
+          <label htmlFor="general-comments">General Comments:</label>
+          <textarea id="general-comments" name="general-comments" required></textarea>
+
+          <label htmlFor="specific-suggestions">Specific Suggestions:</label>
+          <textarea id="specific-suggestions" name="specific-suggestions"></textarea>
+
+          <label htmlFor="other-information">Other Information:</label>
+          <textarea id="other-information" name="other-information"></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
       </div>
-
-      <form onSubmit={handleSubmit}>
-        <h2>Feedback Form</h2>
-        <label htmlFor="general-comments">General Comments:</label>
-        <textarea id="general-comments" name="general-comments" required></textarea>
-
-        <label htmlFor="specific-suggestions">Specific Suggestions:</label>
-        <textarea id="specific-suggestions" name="specific-suggestions"></textarea>
-
-        <label htmlFor="other-information">Other Information:</label>
-        <textarea id="other-information" name="other-information"></textarea>
-
-        <button type="submit">Submit</button>
-      </form>
-    </div>
     </>
-  )
+  );
 }
 
-export default ProjectReviewPage
+export default ProjectReviewPage;

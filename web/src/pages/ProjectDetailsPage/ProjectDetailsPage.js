@@ -26,28 +26,40 @@
 // [4] https://www.justinmind.com/ui-design/dashboard-design-best-practices-ux
 // [5] https://consultport.com/for-companies/superior-skills-for-project-manager-success/
 // [6] https://www.dot.nd.gov/divisions/maintenance/docs/overviewofsea.pdf
-
 import { MetaTags } from '@redwoodjs/web'
+import ProjectDetailCell from 'src/components/ProjectDetailCell/ProjectDetailCell'
 
 const ProjectDetailsPage = () => {
   return (
     <>
       <MetaTags title="ProjectDetails" description="ProjectDetails page" />
 
+      <header className="bg-blue-600 text-white p-4">
+        <h1 className="text-4xl font-bold">Project Details</h1>
+      </header>
 
-      <div>
-      <h1>Project Details</h1>
-      <ProjectDetail id={42} />
-    </div>
-    
+      <div className="p-4">
+        <ProjectDetailCell id={42} />
 
-      <div className="project-actions">
-        {/* Display actions for practicing engineers and retired engineers */}
-        <button>Apply for Review</button>
-        <button>Download Project Documents</button>
-        <button>Contact Practicing Engineer</button>
+        <div className="project-actions">
+          {/* Display actions for practicing engineers and retired engineers */}
+          <button className="bg-green-600 text-white font-bold py-2 px-4 rounded">
+            Apply for Review
+          </button>
+
+          <button className="bg-blue-600 text-white font-bold py-2 px-4 rounded">
+            Download Project Documents
+          </button>
+
+          <button className="bg-gray-600 text-white font-bold py-2 px-4 rounded">
+            Contact Practicing Engineer
+          </button>
+        </div>
       </div>
-    </div>
+
+      <footer className="bg-blue-600 text-white p-4">
+        <p>&copy; {new Date().getFullYear()} WiseWorks. All rights reserved.</p>
+      </footer>
     </>
   )
 }
