@@ -59,3 +59,60 @@ Pay Reviewer: This is a function that allows the project owner to initiate payme
 Collaboration (chat with Reviewer/s): This is a function that enables communication between the project owner and the reviewer(s). It can be implemented as a separate page or a section within the Project Details page.
 Document Upload: This is a function that allows the project owner to upload relevant project documents. It can be implemented as a button or form within the Project Details page.
 Project Owner: This is a data need that requires fetching and displaying information about the project owner. It can be implemented as a section within the Project Details page.
+
+// Notifications
+
+Here is a todo list for adding notifications to your app, starting with in-app notifications and increasing in complexity:
+
+In-App Notifications
+- Create Notifications component
+  - Renders list of notifications
+  - Displays on User Dashboard, Reviewer Dashboard, etc
+- Add notifications to Redux state
+  - CREATE_NOTIFICATION action to add new notification
+  - Notifications reducer to handle state
+- Dispatch CREATE_NOTIFICATION when events occur
+  - Project accepted
+  - Payment received
+  - etc
+- Connect Notifications component to state
+  - Map state to props
+  - Display notifications from state
+
+Email Notifications
+- Integrate with SendGrid
+  - Create account
+  - Implement SendGrid API integration
+- When key events occur, call SendGrid API
+  - Accept project
+  - Receive payment
+  - License approved
+  - etc
+- Pass relevant data to SendGrid API
+  - User info
+  - Notification content
+
+SMS Notifications
+- Integrate with Twilio
+  - Create account
+  - Implement Twilio API integration
+- When key events occur, call Twilio API
+  - Accept project
+  - Receive payment
+  - License approved
+  - etc
+- Pass relevant data to Twilio API
+  - User phone number
+  - Notification content
+
+Advanced Notifications
+- Use AWS SNS for both SMS and email
+- Create topics for each notification type
+- Publish messages to SNS on events
+- Subscribe user info to relevant topics
+
+Let me know if you have any other questions!
+
+
+//
+

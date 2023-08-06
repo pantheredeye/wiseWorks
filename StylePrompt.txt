@@ -1,35 +1,65 @@
-using this guidance, please update the elements on this page accordingly with updated styling:
+Using this guidance, please update the elements on this page accordingly with updated styling. Return all code, elements and fields.:
 
 Use Tailwind CSS for styling components like buttons, sections, images, etc. Key Tailwind classes used:
 
-bg-{color}-{shade} for background colors
-text-{color} for text colors
-p-{size} for padding
-font-bold for bold text
-text-{size} for font sizes
-rounded for rounded borders
-list-{style} for list styles
-Header section
+## Styling
 
-Blue background (#06B6D4)
-White text
-Padding of 4
-Heading is text-4xl font-bold
-Button is bg-green-600 text-white py-2 px-4 rounded
-Section sections
+### Colors
 
-Padding of 4
-Headings are text-2xl font-bold
-Unordered lists use list-disc list-inside
-Testimonials section
+- Primary color: #06B6D4
+- Secondary color: #FFFFFF
+- Text color: #333333
 
-Grid with 3 columns on medium screens
-Image rounded-full
-Blockquote is italic
-Cite text for name
-Footer
+### Typography
 
-Blue background (#06B6D4)
-White text
-Padding of 4
-Flex nav links
+- Headings: font-bold, text-xl to text-4xl
+- Body text: default font (sans-serif)
+
+### Buttons
+
+- Primary button:
+  - bg-green-600
+  - text-white
+  - py-2 px-4
+  - rounded
+
+
+### Lists
+- Unordered lists:
+  - list-disc
+  - list-inside
+
+
+### Forms
+
+- Labels:
+  - block
+  - font-bold
+  - mb-2
+- Inputs/Textareas:
+  - w-full
+  - p-2
+  - border
+  - border-gray-300
+  - rounded
+- Margins:
+  - Wrap each form element in div with class mb-4 for spacing
+
+### Sections
+
+- Header:
+  - bg-primary
+  - text-white
+  - p-4
+- Sections:
+  - p-4
+  - bg-white
+- Headings:
+  - text-2xl
+  - font-bold
+
+### Layout
+
+- Use flexbox for layout and alignment
+- Responsive design with mobile-first approach
+- Media queries to adapt layout for screen sizes

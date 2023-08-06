@@ -29,7 +29,7 @@ const SupportPage = () => {
     <>
       <MetaTags title="Support" description="Support page" />
 
-      <header className="bg-blue-600 text-white p-4">
+      <header className="bg-primary text-white p-4">
         <h1 className="text-4xl font-bold">Support</h1>
       </header>
 
@@ -64,10 +64,6 @@ const SupportPage = () => {
         </section>
 
       </div>
-
-      <footer className="bg-blue-600 text-white p-4">
-        <p>&copy; {new Date().getFullYear()} WiseWorks. All rights reserved.</p>
-      </footer>
 
     </>
   )

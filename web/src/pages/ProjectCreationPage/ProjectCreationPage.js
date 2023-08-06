@@ -25,43 +25,117 @@
 // [4] https://support.wix.com/en/article/velo-working-with-dashboard-pages
 // [5] https://www.linkedin.com/pulse/10-biggest-mistakes-project-managers-make-keeps-them-st-clair-phd
 // [6] https://tms-outsource.com/blog/posts/product-manager-vs-project-manager/
-
 import { MetaTags } from '@redwoodjs/web'
 
 const ProjectCreationPage = () => {
   return (
     <>
-      <MetaTags title="ProjectCreation" description="ProjectCreation page" />
+      <MetaTags title="Create Project" description="Create new project" />
 
-      <div className="project-creation-container">
-        <h1>Create a New Project</h1>
+      <div className="bg-white text-gray-900">
+        <header className="bg-primary text-white p-4">
+          <h1 className="text-4xl font-bold">Create a New Project</h1>
+        </header>
 
-        <form>
-          <label htmlFor="project-title">Project Title:</label>
-          <input type="text" id="project-title" name="project-title" required />
+        <section className="p-4">
+          <form>
+            <h2 className="text-2xl font-bold">Project Details</h2>
 
-          <label htmlFor="project-description">Project Description:</label>
-          <textarea id="project-description" name="project-description" required></textarea>
+            <div className="mb-4">
+              <label htmlFor="project-title" className="block font-bold mb-2">
+                Project Title:
+              </label>
+              <input
+                type="text"
+                id="project-title"
+                name="project-title"
+                required
+                className="w-full p-2 border border-gray-300 rounded"
+              />
+            </div>
 
-          <label htmlFor="budget">Budget:</label>
-          <input type="number" id="budget" name="budget" required />
+            <div className="mb-4">
+              <label htmlFor="project-description" className="block font-bold mb-2">
+                Project Description:
+              </label>
+              <textarea
+                id="project-description"
+                name="project-description"
+                required
+                className="w-full p-2 border border-gray-300 rounded"
+              ></textarea>
+            </div>
 
-          <label htmlFor="relevant-documents">Relevant Documents:</label>
-          <input type="file" id="relevant-documents" name="relevant-documents" accept=".pdf,.doc,.docx" />
+            <div className="mb-4">
+              <label htmlFor="budget" className="block font-bold mb-2">
+                Budget:
+              </label>
+              <input
+                type="number"
+                id="budget"
+                name="budget"
+                required
+                className="w-full p-2 border border-gray-300 rounded"
+              />
+            </div>
 
-          <label htmlFor="expertise-required">Expertise Required:</label>
-          <input type="text" id="expertise-required" name="expertise-required" required />
+            <div className="mb-4">
+              <label htmlFor="relevant-documents" className="block font-bold mb-2">
+                Relevant Documents:
+              </label>
+              <input
+                type="file"
+                id="relevant-documents"
+                name="relevant-documents"
+                accept=".pdf,.doc,.docx"
+                className="w-full p-2 border border-gray-300 rounded"
+              />
+            </div>
 
-          <label htmlFor="project-timeline">Project Timeline:</label>
-          <input type="date" id="start-date" name="start-date" required />
-          <input type="date" id="end-date" name="end-date" required />
+            <div className="mb-4">
+              <label htmlFor="expertise-required" className="block font-bold mb-2">
+                Expertise Required:
+              </label>
+              <input
+                type="text"
+                id="expertise-required"
+                name="expertise-required"
+                required
+                className="w-full p-2 border border-gray-300 rounded"
+              />
+            </div>
 
-          <button type="submit">Submit</button>
-        </form>
+            <div className="mb-4">
+              <label htmlFor="project-timeline" className="block font-bold mb-2">
+                Project Timeline:
+              </label>
+              <input
+                type="date"
+                id="start-date"
+                name="start-date"
+                required
+                className="w-full p-2 border border-gray-300 rounded mb-2"
+              />
+              <input
+                type="date"
+                id="end-date"
+                name="end-date"
+                required
+                className="w-full p-2 border border-gray-300 rounded"
+              />
+            </div>
+
+            <button
+              className="bg-green-600 text-white py-2 px-4 rounded"
+              type="submit"
+            >
+              Submit
+            </button>
+          </form>
+        </section>
       </div>
     </>
   );
 };
 
 export default ProjectCreationPage;
-

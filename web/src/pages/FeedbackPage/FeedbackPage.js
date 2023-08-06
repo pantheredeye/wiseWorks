@@ -21,47 +21,67 @@
 // [4] https://mart.cummins.com/imagelibrary/data/assetfiles/0061983.pdf
 // [5] https://htmlburger.com/blog/user-dashboard/
 // [6] https://news.ycombinator.com/item?id=20890682
-
-import { MetaTags } from '@redwoodjs/web'
+import { MetaTags } from '@redwoodjs/web';
 
 const FeedbackPage = () => {
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle form submission logic here
-  };
+    // Handle form submission
+  }
 
   return (
     <>
       <MetaTags title="Feedback" description="Feedback page" />
 
-      <h1>FeedbackPage</h1>
-      <div className="rating-feedback-container">
-      <h1>Rate and Provide Feedback</h1>
+      <header className="bg-primary text-white p-4">
+        <h1 className="text-4xl font-bold">Feedback</h1>
+      </header>
 
-      <div className="retired-engineer-info">
-        {/* Display retired engineer information */}
-      </div>
+      <section className="p-4 bg-white">
 
-      <div className="rating-system">
-        {/* Display rating system */}
-      </div>
+        <h2 className="text-2xl font-bold">Rate and Provide Feedback</h2>
 
-      <form onSubmit={handleSubmit}>
-        <h2>Feedback Form</h2>
-        <label htmlFor="strengths">Areas of Strength:</label>
-        <textarea id="strengths" name="strengths" required></textarea>
+        <div className="retired-engineer-info mb-4">
+          {/* Display retired engineer info */}
+        </div>
 
-        <label htmlFor="improvement">Areas for Improvement:</label>
-        <textarea id="improvement" name="improvement"></textarea>
+        <div className="rating-system mb-4">
+          {/* Display rating system */}
+        </div>
 
-        <label htmlFor="recommendations">Recommendations:</label>
-        <textarea id="recommendations" name="recommendations"></textarea>
+        <form onSubmit={handleSubmit}>
 
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+          <h3 className="text-xl font-bold mb-4">Feedback Form</h3>
+
+          <div className="mb-4">
+            <label htmlFor="strengths" className="block font-bold mb-2">Areas of Strength:</label>
+            <textarea id="strengths" name="strengths" className="w-full p-2 border border-gray-300 rounded" required></textarea>
+          </div>
+
+          <div className="mb-4">
+            <label htmlFor="improvement" className="block font-bold mb-2">Areas for Improvement:</label>
+            <textarea id="improvement" name="improvement" className="w-full p-2 border border-gray-300 rounded"></textarea>
+          </div>
+
+          <div className="mb-4">
+            <label htmlFor="recommendations" className="block font-bold mb-2">Recommendations:</label>
+            <textarea id="recommendations" name="recommendations" className="w-full p-2 border border-gray-300 rounded"></textarea>
+          </div>
+
+          <button
+            className="bg-green-600 text-white py-2 px-4 rounded"
+            type="submit"
+          >
+            Submit
+          </button>
+
+        </form>
+
+      </section>
+
     </>
   )
 }
 
-export default FeedbackPage
+export default FeedbackPage;

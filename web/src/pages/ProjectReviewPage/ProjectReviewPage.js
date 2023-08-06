@@ -25,26 +25,33 @@
 import { MetaTags } from '@redwoodjs/web'
 
 const ProjectReviewPage = () => {
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle form submission logic here
+    // Handle form submission
   };
 
   return (
     <>
-      <MetaTags title="ProjectReview" description="ProjectReview page" />
+      <MetaTags title="Project Review" description="Review project" />
 
-      <div className="project-review-container">
-        <h1>Project Title</h1>
+      <header className="bg-primary text-white p-4">
+        <h1 className="text-4xl font-bold">Project Title</h1>
+      </header>
+
+      <section className="p-4">
+
         <p>Project Description</p>
 
         <div className="project-documents">
-          <h2>Project Documents</h2>
-          {/* Display relevant documents */}
+          <h2 className="text-2xl font-bold">Project Documents</h2>
+          {/* Display documents */}
         </div>
 
         <form onSubmit={handleSubmit}>
-          <h2>Feedback Form</h2>
+
+          <h2 className="text-2xl font-bold">Feedback Form</h2>
+
           <label htmlFor="general-comments">General Comments:</label>
           <textarea id="general-comments" name="general-comments" required></textarea>
 
@@ -54,11 +61,19 @@ const ProjectReviewPage = () => {
           <label htmlFor="other-information">Other Information:</label>
           <textarea id="other-information" name="other-information"></textarea>
 
-          <button type="submit">Submit</button>
+          <button
+            className="bg-green-600 text-white py-2 px-4 rounded"
+            type="submit"
+          >
+            Submit
+          </button>
+
         </form>
-      </div>
+
+      </section>
+
     </>
-  );
+  )
 }
 
-export default ProjectReviewPage;
+export default ProjectReviewPage

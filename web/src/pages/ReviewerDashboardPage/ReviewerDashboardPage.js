@@ -36,7 +36,7 @@ const ReviewerDashboardPage = () => {
         description="ReviewerDashboard page"
       />
 
-      <header className="bg-blue-600 text-white p-4">
+      <header className="bg-primary text-white p-4">
         <h1 className="text-4xl font-bold">Reviewer Dashboard</h1>
       </header>
 
@@ -60,7 +60,7 @@ const ReviewerDashboardPage = () => {
           <button className="bg-green-600 text-white font-bold py-2 px-4 rounded">
             Apply for Review
           </button>
-          <button className="bg-blue-600 text-white font-bold py-2 px-4 rounded">
+          <button className="bg-primary text-white font-bold py-2 px-4 rounded">
            Download Project Documents
           </button>
           <button className="bg-gray-600 text-white font-bold py-2 px-4 rounded">
@@ -74,7 +74,7 @@ const ReviewerDashboardPage = () => {
 
       </div>
 
-      <footer className="bg-blue-600 text-white p-4">
+      <footer className="bg-primary text-white p-4">
         <p>&copy; {new Date().getFullYear()} WiseWorks. All rights reserved.</p>
       </footer>
 

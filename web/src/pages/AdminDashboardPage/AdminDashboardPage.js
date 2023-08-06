@@ -21,42 +21,43 @@
 // [4] https://www.justinmind.com/ui-design/dashboard-design-best-practices-ux
 // [5] https://htmlburger.com/blog/user-dashboard/
 // [6] https://support.wix.com/en/article/velo-working-with-dashboard-pages
-
 import { MetaTags } from '@redwoodjs/web'
 
 const AdminDashboardPage = () => {
   return (
     <>
-      <MetaTags title="AdminDashboard" description="AdminDashboard page" />
+      <MetaTags title="Admin Dashboard" description="Admin Dashboard page" />
 
-      <div className="admin-dashboard-container">
-      <h1>Admin Dashboard</h1>
+      <header className="bg-primary text-white p-4">
+        <h1 className="text-4xl font-bold">Admin Dashboard</h1>
+        <button className="bg-green-600 text-white py-2 px-4 rounded">Button</button>
+      </header>
 
-      <div className="user-verification">
-        <h2>User Verification</h2>
+      <section className="p-4">
+        <h2 className="text-2xl font-bold">User Verification</h2>
         {/* Display list of users to be verified */}
-      </div>
+      </section>
 
-      <div className="activity-monitoring">
-        <h2>Activity Monitoring</h2>
+      <section className="p-4">
+        <h2 className="text-2xl font-bold">Activity Monitoring</h2>
         {/* Display real-time activity on the platform */}
-      </div>
+      </section>
 
-      <div className="user-management">
-        <h2>User Management</h2>
+      <section className="p-4">
+        <h2 className="text-2xl font-bold">User Management</h2>
         {/* Provide functionality to manage user accounts */}
-      </div>
+      </section>
 
-      <div className="support">
-        <h2>Support and Help</h2>
+      <section className="p-4">
+        <h2 className="text-2xl font-bold">Support and Help</h2>
         {/* Display support contact information and links to resources */}
-      </div>
+      </section>
 
-      <div className="system-monitoring">
-        <h2>System Monitoring</h2>
+      <section className="p-4">
+        <h2 className="text-2xl font-bold">System Monitoring</h2>
         {/* Display system health and performance metrics */}
-      </div>
-    </div>
+      </section>
+
     </>
   )
 }

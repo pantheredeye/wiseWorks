@@ -28,7 +28,7 @@ export const Success = ({ projectDetail }) => {
   return (
     <div className="bg-gray-100 p-4">
 
-      <header className="bg-blue-600 text-white p-4">
+      <header className="bg-primary text-white p-4">
         <h1 className="text-4xl font-bold">{title}</h1>
       </header>
 
@@ -48,7 +48,7 @@ export const Success = ({ projectDetail }) => {
         </div>
       </div>
 
-      <footer className="bg-blue-600 text-white p-4">
+      <footer className="bg-primary text-white p-4">
         <p>&copy; {new Date().getFullYear()} WiseWorks. All rights reserved.</p>
       </footer>
 

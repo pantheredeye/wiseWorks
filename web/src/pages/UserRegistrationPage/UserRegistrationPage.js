@@ -19,43 +19,62 @@
 // [4] https://aspirity.com/blog/good-admin-panel-design
 // [5] https://htmlburger.com/blog/user-dashboard/
 // [6] https://www.justinmind.com/ui-design/dashboard-design-best-practices-ux
-
 import { MetaTags } from '@redwoodjs/web'
 
 const UserRegistrationPage = () => {
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle form submission logic here
+    // Handle form submission
   }
 
   return (
-    <div>
-      <MetaTags title="User Registration" description="User Registration page" />
+    <>
+      <MetaTags
+        title="User Registration"
+        description="User registration page"
+      />
 
-      <h1>Create a New Account</h1>
+      <header className="bg-primary text-white p-4">
+        <h1 className="text-4xl font-bold">Create a New Account</h1>
+      </header>
 
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="name">Name:</label>
-        <input type="text" id="name" name="name" required />
+      <section className="p-4">
 
-        <label htmlFor="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+        <form onSubmit={handleSubmit}>
 
-        <label htmlFor="password">Password:</label>
-        <input type="password" id="password" name="password" required />
+          <h2 className="text-2xl font-bold">Account Details</h2>
 
-        <label htmlFor="license">Professional Engineering License:</label>
-        <input type="file" id="license" name="license" required />
+          <label htmlFor="name">Name:</label>
+          <input type="text" id="name" name="name" required />
 
-        <label htmlFor="terms">
-          <input type="checkbox" id="terms" name="terms" required />
-          I agree to the terms and conditions
-        </label>
+          <label htmlFor="email">Email:</label>
+          <input type="email" id="email" name="email" required />
 
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-  );
+          <label htmlFor="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+
+          <label htmlFor="license">Professional Engineering License:</label>
+          <input type="file" id="license" name="license" required />
+
+          <label htmlFor="terms">
+            <input type="checkbox" id="terms" name="terms" required />
+            I agree to the terms and conditions
+          </label>
+
+          <button
+            className="bg-green-600 text-white py-2 px-4 rounded"
+            type="submit"
+          >
+            Submit
+          </button>
+
+        </form>
+
+      </section>
+
+    </>
+  )
 }
 
-export default UserRegistrationPage;
+export default UserRegistrationPage

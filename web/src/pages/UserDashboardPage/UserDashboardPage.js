@@ -5,48 +5,54 @@
 // Actions and Navigation: Provide clear and intuitive navigation options for users to perform common actions. This can include buttons or links to create a new project, browse available projects, view project details, and access the feedback form.
 // Ratings and Feedback: Show the user's ratings and feedback received from practicing engineers. This can help establish trust and reputation within the community.
 // Support and Help: Include a section with contact information for the support team and links to FAQs or knowledge base resources. This can assist users in getting assistance or finding answers to their questions.
-
 import { MetaTags } from '@redwoodjs/web'
 import ProjectsCell from 'src/components/ProjectsCell/ProjectsCell'
 
 const UserDashboardPage = () => {
+
   return (
     <>
       <MetaTags title="UserDashboard" description="UserDashboard page" />
-<div class="dashboard-container">
-  <h1>Welcome, John!</h1>
 
-  <div class="project-overview">
-    <h2>Your Projects</h2>
-    {/* <!-- Display project cards or list here --> */}
-  </div>
+      <header className="bg-primary text-white p-4">
+        <h1 className="text-4xl font-bold">Welcome, John!</h1>
+      </header>
 
-  <div class="reviewer-overview">
-    <h2>Available Projects for Review</h2>
-    <ProjectsCell />
-  </div>
+      <div className="p-4">
 
-  <div class="notifications">
-    <h2>Notifications</h2>
-  </div>
+        <section className="project-overview">
+          <h2 className="text-2xl font-bold">Your Projects</h2>
+          {/* Display project cards or list here */}
+        </section>
 
-  <div class="actions">
-    <h2>Actions</h2>
-    {/* <!-- Display buttons or links for common actions --> */}
-  </div>
+        <section className="reviewer-overview">
+          <h2 className="text-2xl font-bold">Available Projects for Review</h2>
+          <ProjectsCell />
+        </section>
 
-  <div class="payment-details">
-    <h2>Your Payment Details</h2>
-  </div>
+        <section className="notifications">
+          <h2 className="text-2xl font-bold">Notifications</h2>
+        </section>
 
-  <div class="ratings-feedback">
-    <h2>Your Ratings and Feedback</h2>
-  </div>
+        <section className="actions">
+          <h2 className="text-2xl font-bold">Actions</h2>
+          {/* Display buttons or links for common actions */}
+        </section>
 
-  <div class="support">
-    <h2>Support and Help</h2>
-  </div>
-</div>
+        <section className="payment-details">
+          <h2 className="text-2xl font-bold">Your Payment Details</h2>
+        </section>
+
+        <section className="ratings-feedback">
+          <h2 className="text-2xl font-bold">Your Ratings and Feedback</h2>
+        </section>
+
+        <section className="support">
+          <h2 className="text-2xl font-bold">Support and Help</h2>
+        </section>
+
+      </div>
+
     </>
   )
 }

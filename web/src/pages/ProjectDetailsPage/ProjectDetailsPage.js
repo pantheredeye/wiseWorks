@@ -34,7 +34,7 @@ const ProjectDetailsPage = () => {
     <>
       <MetaTags title="ProjectDetails" description="ProjectDetails page" />
 
-      <header className="bg-blue-600 text-white p-4">
+      <header className="bg-primary text-white p-4">
         <h1 className="text-4xl font-bold">Project Details</h1>
       </header>
 
@@ -47,7 +47,7 @@ const ProjectDetailsPage = () => {
             Apply for Review
           </button>
 
-          <button className="bg-blue-600 text-white font-bold py-2 px-4 rounded">
+          <button className="bg-primary text-white font-bold py-2 px-4 rounded">
             Download Project Documents
           </button>
 
@@ -57,9 +57,7 @@ const ProjectDetailsPage = () => {
         </div>
       </div>
 
-      <footer className="bg-blue-600 text-white p-4">
-        <p>&copy; {new Date().getFullYear()} WiseWorks. All rights reserved.</p>
-      </footer>
+
     </>
   )
 }

@@ -115,3 +115,35 @@ Pages:
 11. Support Page (Main Layout)
     - Contact information for reaching out to the support team
     - FAQs or knowledge base for common questions and issues
+
+Questions
+
+------------------
+
+Where do notices to the user go in this layout? How do I make components for that? For instance, when a project is accepted for review, the user should get an email/text/and in-app notification. When the user gets paid, it would be great to have the same update. When a user's license is approved, or company is approved, etc.
+
+Based on reviewing the provided content, here are my thoughts on where user notifications could fit into the project structure:
+
+For in-app notifications, you could have a Notifications component that renders on pages like the User Dashboard and Reviewer Dashboard. It would display a list of notifications relevant to that user.
+
+When certain actions occur (project accepted, payment received, etc), you could dispatch a Redux action to add the notification to the state. The Notifications component could listen for changes in state and automatically display new notifications.
+
+For email/SMS notifications, you'd likely want to integrate with a third-party notification service. When key events occur, you'd trigger the notification by calling the provider's API.
+
+Some options are:
+
+SendGrid for email
+Twilio for SMS
+AWS SNS for both email and SMS
+You'd create these integrations separately from the core app code, likely in an API service layer. Then call the integration from your API when you need to send a notification.
+
+The key is separating concerns - your core app shouldn't have to know about the implementation details of sending notifications. Just dispatch actions and make API calls, and let the integrations handle delivery.
+
+For the license approval specifically, I'd recommend an Admin UI for approving licenses. When approved, dispatch an action to update state, which triggers both in-app and email notifications to the user.
+
+
+------------------
+
+
+
+------------------
