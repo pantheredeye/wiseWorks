@@ -12,6 +12,7 @@ import { Router, Route } from '@redwoodjs/router'
 const Routes = () => {
   return (
     <Router>
+      <Route path="/user-profile" page={UserProfilePage} name="userProfile" />
       <Route path="/admin-dashboard" page={AdminDashboardPage} name="adminDashboard" />
       <Route path="/user-registration" page={UserRegistrationPage} name="userRegistration" />
       <Route path="/support" page={SupportPage} name="support" />
