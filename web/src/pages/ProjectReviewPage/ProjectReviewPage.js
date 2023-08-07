@@ -33,38 +33,47 @@ const ProjectReviewPage = () => {
 
   return (
     <>
-      <MetaTags title="Project Review" description="Review project" />
+
+      <MetaTags
+        title="Project Review"
+        description="Review project"
+      />
 
       <header className="bg-primary text-white p-4">
         <h1 className="text-4xl font-bold">Project Title</h1>
       </header>
 
-      <section className="p-4">
+      <section className="p-4 bg-white">
 
         <p>Project Description</p>
 
         <div className="project-documents">
-          <h2 className="text-2xl font-bold">Project Documents</h2>
+          <h2 className="text-2xl font-bold mb-4">Project Documents</h2>
           {/* Display documents */}
         </div>
 
         <form onSubmit={handleSubmit}>
 
-          <h2 className="text-2xl font-bold">Feedback Form</h2>
+          <h2 className="text-2xl font-bold mb-4">Feedback Form</h2>
 
-          <label htmlFor="general-comments">General Comments:</label>
-          <textarea id="general-comments" name="general-comments" required></textarea>
+          <div className="mb-4">
+            <label className="block font-bold mb-2" htmlFor="general-comments">General Comments:</label>
+            <textarea className="w-full p-2 border border-gray-300 rounded" id="general-comments" name="general-comments" required></textarea>
+          </div>
 
-          <label htmlFor="specific-suggestions">Specific Suggestions:</label>
-          <textarea id="specific-suggestions" name="specific-suggestions"></textarea>
+          <div className="mb-4">
+            <label className="block font-bold mb-2" htmlFor="specific-suggestions">Specific Suggestions:</label>
+            <textarea className="w-full p-2 border border-gray-300 rounded" id="specific-suggestions" name="specific-suggestions"></textarea>
+          </div>
 
-          <label htmlFor="other-information">Other Information:</label>
-          <textarea id="other-information" name="other-information"></textarea>
+          <div className="mb-4">
+            <label className="block font-bold mb-2" htmlFor="other-information">Other Information:</label>
+            <textarea className="w-full p-2 border border-gray-300 rounded" id="other-information" name="other-information"></textarea>
+          </div>
 
           <button
             className="bg-green-600 text-white py-2 px-4 rounded"
-            type="submit"
-          >
+            type="submit">
             Submit
           </button>
 

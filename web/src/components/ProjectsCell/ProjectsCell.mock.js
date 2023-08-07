@@ -10,6 +10,7 @@
 //   owner     User     @relation(fields: [ownerId], references: [id])
 //   ownerId   Int
 //   status    String
+//   reviewApplicants
 // }
 
 export const standard = (/* vars, { ctx, req } */) => ({

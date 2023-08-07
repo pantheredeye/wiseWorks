@@ -39,28 +39,38 @@ const UserRegistrationPage = () => {
         <h1 className="text-4xl font-bold">Create a New Account</h1>
       </header>
 
-      <section className="p-4">
+      <section className="p-4 bg-white">
 
         <form onSubmit={handleSubmit}>
 
-          <h2 className="text-2xl font-bold">Account Details</h2>
+          <h2 className="text-2xl font-bold mb-4">Account Details</h2>
 
-          <label htmlFor="name">Name:</label>
-          <input type="text" id="name" name="name" required />
+          <div className="mb-4">
+            <label className="block font-bold mb-2" htmlFor="name">Name:</label>
+            <input className="w-full p-2 border border-gray-300 rounded" type="text" id="name" name="name" required />
+          </div>
 
-          <label htmlFor="email">Email:</label>
-          <input type="email" id="email" name="email" required />
+          <div className="mb-4">
+            <label className="block font-bold mb-2" htmlFor="email">Email:</label>
+            <input className="w-full p-2 border border-gray-300 rounded" type="email" id="email" name="email" required />
+          </div>
 
-          <label htmlFor="password">Password:</label>
-          <input type="password" id="password" name="password" required />
+          <div className="mb-4">
+            <label className="block font-bold mb-2" htmlFor="password">Password:</label>
+            <input className="w-full p-2 border border-gray-300 rounded" type="password" id="password" name="password" required />
+          </div>
 
-          <label htmlFor="license">Professional Engineering License:</label>
-          <input type="file" id="license" name="license" required />
+          <div className="mb-4">
+            <label className="block font-bold mb-2" htmlFor="license">Professional Engineering License:</label>
+            <input className="w-full p-2 border border-gray-300 rounded" type="file" id="license" name="license" required />
+          </div>
 
-          <label htmlFor="terms">
-            <input type="checkbox" id="terms" name="terms" required />
-            I agree to the terms and conditions
-          </label>
+          <div className="mb-4">
+            <label className="block font-bold mb-2">
+              <input className="mr-2" type="checkbox" id="terms" name="terms" required />
+              I agree to the terms and conditions
+            </label>
+          </div>
 
           <button
             className="bg-green-600 text-white py-2 px-4 rounded"

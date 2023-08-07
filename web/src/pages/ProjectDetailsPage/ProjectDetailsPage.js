@@ -26,6 +26,9 @@
 // [4] https://www.justinmind.com/ui-design/dashboard-design-best-practices-ux
 // [5] https://consultport.com/for-companies/superior-skills-for-project-manager-success/
 // [6] https://www.dot.nd.gov/divisions/maintenance/docs/overviewofsea.pdf
+
+// Thumbnail
+
 import { MetaTags } from '@redwoodjs/web'
 import ProjectDetailCell from 'src/components/ProjectDetailCell/ProjectDetailCell'
 
