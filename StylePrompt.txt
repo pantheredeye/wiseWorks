@@ -63,3 +63,33 @@ Use Tailwind CSS for styling components like buttons, sections, images, etc. Key
 - Use flexbox for layout and alignment
 - Responsive design with mobile-first approach
 - Media queries to adapt layout for screen sizes
+
+
+Container
+- Use flow-root for block formatting context
+- Add mt-8 for top margin
+
+Table Wrapper
+- Add -mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8 for padding and overflow
+
+Table
+- Add min-w-full divide-y divide-gray-300 for full width and dividers
+
+Table Head
+- Use py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 for padding, alignment, text size, weight and color
+
+Table Head Cells
+- Use py-3.5 px-3 with same text styling as Table Head
+
+Table Body
+- Add divide-y divide-gray-200 for dividers
+
+Table Rows
+- Add whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 for wrapping, padding, text size, weight and color
+
+Table Cells
+- Use px-3 text-sm text-gray-500 for padding and neutral text
+
+Table Links
+- Use relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium for alignment, padding and text size/weight
+- Style with text-indigo-600 hover:text-indigo-900
